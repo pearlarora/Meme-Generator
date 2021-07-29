@@ -52,7 +52,11 @@ class MemeGenerator extends React.Component {
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />
-        <MemeImage data={this.state} />
+        <div className="container">
+          <h1 className="top">{this.state.topText}</h1>
+          <MemeImage data={this.state} />
+          <h1 className="bottom">{this.state.bottomText}</h1>
+        </div>
       </div>
     );
   }

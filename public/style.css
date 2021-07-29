@@ -1,0 +1,76 @@
+:root {
+  --purple-gradient: linear-gradient(
+    to right,
+    rgb(43, 1, 82),
+    rgb(67, 2, 128),
+    rgb(99, 4, 187)
+  );
+}
+
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  margin: 0;
+  background-color: rgb(231, 231, 231);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: rgb(231, 231, 231);
+  background-image: var(--purple-gradient);
+}
+header > img {
+  height: 60px;
+  margin-right: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin: 20px;
+}
+form > input {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid rgb(43, 43, 43);
+}
+.top-text {
+  grid-column: span 2;
+}
+.bottom-text {
+  grid-column: span 2;
+}
+.generate {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(231, 231, 231);
+  background-image: var(--purple-gradient);
+  border: none;
+  grid-column: span 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 1vw;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+.top {
+  position: absolute;
+}
+.meme-img {
+  height: 35vw;
+}
+.bottom {
+  margin-top: 32vw;
+  position: absolute;
+}

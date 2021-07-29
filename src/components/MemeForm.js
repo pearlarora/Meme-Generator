@@ -9,6 +9,7 @@ function MemeForm(props) {
         name="topText"
         value={props.data.topText}
         onChange={props.handleChange}
+        className="top-text"
       />
       <input
         type="text"
@@ -16,8 +17,9 @@ function MemeForm(props) {
         name="bottomText"
         value={props.data.bottomText}
         onChange={props.handleChange}
+        className="bottom-text"
       />
-      <button>Generate</button>
+      <button className="generate">GENERATE</button>
     </form>
   );
 }
